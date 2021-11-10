@@ -19,7 +19,7 @@ Then build with your favourite Android Virtual Device.
 `financeManager.FinancePresenter` - User input validation and program logic for finance management.
 `financeManager.FinanceSqlHelper` - SQLite database calls.
 
-`linkNetwork` - Local server for Plaid link (note in prodcution this would not be used).
+`linkNetwork` - Local server for Plaid link (Note: in prodcution this would not be used).
 
 `plaidLink.linkActivity` - Bank account linking using plaid.
 
