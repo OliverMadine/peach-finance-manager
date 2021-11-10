@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Plaid Technologies, Inc. <support@plaid.com>
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/root_layout"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="@dimen/space_2x"
+  tools:context=".plaidLink.LinkActivity">
+
+  <TextView
+      android:id="@+id/result"
+      style="@style/PlaidText.B1.Regular"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:autoLink="all"
+      android:gravity="center|start"
+      android:text="@string/landing_text" />
+
+  <com.google.android.material.button.MaterialButton
+    android:id="@+id/open_link"
+    style="@style/PlaidButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/open_link" />
+
+</LinearLayout>

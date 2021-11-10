@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2020 Plaid Technologies, Inc. <support@plaid.com>
+  -->
+
+<!DOCTYPE resources [<!ENTITY app_name "Peach">]>
+
+<resources>
+  <!-- Link Bank Activity-->
+  <string name="app_name">&app_name;</string>
+  <string name="content_exit">
+    Uh-oh! It seems something went wrong:\n\"%1$s\"
+
+    \n\nVisit <a href="https://plaid.com/docs/#errors">https://plaid.com/docs/#errors</a> for more information on the error code below
+    \nError Code: <b>%2$s</b>
+  </string>
+  <string name="content_cancel">You left Link without completing the flow. Reason: %1$s</string>
+  <string name="landing_text">
+    Welcome to &app_name;!
+    \nPlease link you bank account.
+  </string>
+  <string name="open_link">Open Link</string>
+
+  <!-- Budget Activity -->
+  <string name="category">Category</string>
+  <string name="amount">Amount</string>
+  <string name="budget">Budget</string>
+  <string name="add_category_button_name">Add Category</string>
+  <string name="log_transaction_button_name">Log Transaction</string>
+  <string name="category_length">25</string>
+  <string name="currency">£</string>
+  <string name="balance">balance</string>
+</resources>
