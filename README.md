@@ -1,7 +1,7 @@
 # Peach - Finance Manager
 An Android finance management app with Plaid integration.
 
-Allows user to specify budgetting categories and log transactions appropriately, while tracking account balance.
+Allows user to specify budgetting categories and log transactions, while tracking account balance.
 
 # Demo
 
@@ -19,11 +19,11 @@ Then build with your favourite Android Virtual Device.
 `financeManager.FinancePresenter` - User input validation and program logic for finance management.
 `financeManager.FinanceSqlHelper` - SQLite database calls.
 
-`linkNetwork` - Local server for Plaid link (Note: in prodcution this would not be used).
+`linkNetwork` - Local server for Plaid link (Note: In prodcution this would not be used).
 
 `plaidLink.linkActivity` - Bank account linking using plaid.
 
 # Credit
-Build using the [Plaid link android sdk](https://github.com/plaid/plaid-link-android).
+Built using the [Plaid link android sdk](https://github.com/plaid/plaid-link-android).
 
 Logo design: [streamifystore](https://streamifystore.com).
