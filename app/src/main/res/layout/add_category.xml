@@ -6,16 +6,18 @@
 
     <EditText
         android:id="@+id/add_category_field"
+        style="@style/PlaidText.B1.Regular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"
-        android:maxLength="25"
         android:hint="@string/category"
         android:importantForAutofill="no"
-        android:inputType="text" />
+        android:inputType="text"
+        android:maxLength="25" />
 
     <EditText
         android:id="@+id/add_budget_field"
+        style="@style/PlaidText.B1.Regular"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1"

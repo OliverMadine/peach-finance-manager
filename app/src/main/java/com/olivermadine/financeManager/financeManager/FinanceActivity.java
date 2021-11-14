@@ -60,7 +60,7 @@ public class FinanceActivity extends AppCompatActivity {
     }
 
     protected void refreshBalance() {
-        setTitle("Balance " + showCurrency(presenter.getBalance()));
+        setTitle(getString(R.string.balance) + ": " + showCurrency(presenter.getBalance()));
     }
 
     protected void refreshBudgetProgress(String categoryName) {

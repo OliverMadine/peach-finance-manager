@@ -28,5 +28,6 @@
   <string name="log_transaction_button_name">Log Transaction</string>
   <string name="category_length">25</string>
   <string name="currency">£</string>
-  <string name="balance">balance</string>
+  <string name="balance_pref">balance_pref_key</string>
+  <string name="balance">Balance</string>
 </resources>

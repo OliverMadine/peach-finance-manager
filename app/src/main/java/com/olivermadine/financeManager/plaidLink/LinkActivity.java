@@ -34,7 +34,7 @@ public class LinkActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         // if the balance is already known then do not prompt relink
         final SharedPreferences sharedPref = PreferenceManager.getDefaultSharedPreferences(this);
-        if (sharedPref.contains(getString(R.string.balance))) {
+        if (sharedPref.contains(getString(R.string.balance_pref))) {
             switchToFinanceManager();
         }
 
@@ -66,8 +66,7 @@ public class LinkActivity extends AppCompatActivity {
     }
 
     private void openLink() {
-        LinkTokenRequester.INSTANCE.getToken()
-                .subscribe(this::onLinkTokenSuccess, this::onLinkTokenError);
+        LinkTokenRequester.INSTANCE.getToken().subscribe(this::onLinkTokenSuccess, this::onLinkTokenError);
     }
 
     private void onLinkTokenSuccess(String token) {
@@ -96,8 +95,9 @@ public class LinkActivity extends AppCompatActivity {
                         .stream()
                         .mapToDouble(acc -> getAvailOrCurrent(acc.getBalance()))
                         .sum();
-                PreferenceManager.getDefaultSharedPreferences(this).edit()
-                        .putFloat(getString(R.string.balance), (float) totalBalance)
+                PreferenceManager.getDefaultSharedPreferences(this)
+                        .edit()
+                        .putFloat(getString(R.string.balance_pref), (float) totalBalance)
                         .apply();
                 switchToFinanceManager();
                 return Unit.INSTANCE;

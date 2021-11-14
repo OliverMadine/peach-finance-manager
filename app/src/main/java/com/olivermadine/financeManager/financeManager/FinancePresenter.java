@@ -19,7 +19,7 @@ public class FinancePresenter {
     }
 
     protected float getBalance() {
-        return PreferenceManager.getDefaultSharedPreferences(activity).getFloat(activity.getString(R.string.balance), 0);
+        return PreferenceManager.getDefaultSharedPreferences(activity).getFloat(activity.getString(R.string.balance_pref), 0);
     }
 
     protected float getRemainingBudget(String name) {
@@ -57,7 +57,7 @@ public class FinancePresenter {
             // decrease balance
             PreferenceManager.getDefaultSharedPreferences(activity)
                     .edit()
-                    .putFloat(activity.getString(R.string.balance), getBalance() - amount)
+                    .putFloat(activity.getString(R.string.balance_pref), getBalance() - amount)
                     .apply();
 
             // refresh view

@@ -61,10 +61,13 @@ public class FinanceSqlHelper extends SQLiteOpenHelper {
 
     protected float getSpent(String categoryName) {
         final SQLiteDatabase db = getReadableDatabase();
-        final Cursor cursor = db.query(TABLE_NAME, new String[]{SPENT},
+        final Cursor cursor = db.query(
+                TABLE_NAME,
+                new String[]{SPENT},
                 CATEGORY_NAME + "= ?",
                 new String[]{categoryName},
-                null, null, null, null);
+                null, null, null, null
+        );
         cursor.moveToNext();
 
         return cursor.getFloat(0);
@@ -72,10 +75,13 @@ public class FinanceSqlHelper extends SQLiteOpenHelper {
 
     protected float getBudget(String categoryName) {
         final SQLiteDatabase db = getReadableDatabase();
-        final Cursor cursor = db.query(TABLE_NAME, new String[]{BUDGET},
+        final Cursor cursor = db.query(
+                TABLE_NAME,
+                new String[]{BUDGET},
                 CATEGORY_NAME + "= ?",
                 new String[]{categoryName},
-                null, null, null, null);
+                null, null, null, null
+        );
         cursor.moveToNext();
 
         return cursor.getFloat(0);
@@ -84,10 +90,12 @@ public class FinanceSqlHelper extends SQLiteOpenHelper {
     protected List<String> getCategories() {
         final SQLiteDatabase db = getReadableDatabase();
         final List<String> categories = new ArrayList<>();
+
         Cursor row = db.query(TABLE_NAME, null, null, null, null, null, CATEGORY_NAME, null);
         while (row.moveToNext()) {
             categories.add(row.getString(0));
         }
+
         return categories;
     }
 }
