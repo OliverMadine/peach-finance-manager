@@ -1,5 +1,5 @@
 # Peach - Finance Manager
-An android finance management app with Plaid integration.
+An Android finance management app with Plaid integration.
 
 Allows user to specify budgetting categories and log transactions appropriately, while tracking account balance.
 
