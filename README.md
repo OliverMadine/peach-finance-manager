@@ -7,13 +7,13 @@ Allows user to specify budgetting categories and log transactions, while trackin
 
 <img src="https://github.com/OliverMadine/peach-finance-manager/blob/main/docs/demo.gif" width="30%" height="30%"/>
 
-# Usage - Emulator
+# Emulator Usage
 
 Start a local plaid server by running `./start_server.sh ${CLIENT_ID} ${SECRET}` in the project root directory, using an appropriate plaid `CLIENT_ID` and `SECRET`. 
 
-Then build with your favourite Android Virtual Device.
+Then build with your favourite Android Virtual Device (AVD).
 
-# Project structure
+# Project Structure
 
 `financeManager.FinanceActivity` - Manages user interface of budgetting and transaction logging.
 `financeManager.FinancePresenter` - User input validation and program logic for finance management.
