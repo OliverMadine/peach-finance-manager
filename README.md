@@ -5,7 +5,7 @@ Allows user to specify budgetting categories and log transactions, while trackin
 
 # Demo
 
-<img src="https://github.com/OliverMadine/peach-finance-manager/blob/main/docs/demo.gif" width="30%" height="30%"/>
+<img alt="Peach demo" src="https://github.com/OliverMadine/peach-finance-manager/blob/main/docs/demo.gif" width="30%" height="30%"/>
 
 # Emulator Usage
 
