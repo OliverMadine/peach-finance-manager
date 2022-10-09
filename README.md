@@ -5,7 +5,7 @@ An Android finance management app with [Plaid](https://plaid.com) integration.
 
 <img alt="Peach demo" src="https://github.com/OliverMadine/peach-finance-manager/blob/main/docs/demo.gif" width="30%" height="30%"/>
 
-# Emulator Usage
+# Getting Started
 
 Start a local plaid server by running `./start_server.sh ${CLIENT_ID} ${SECRET}` in the project root directory, using an appropriate plaid `CLIENT_ID` and `SECRET`. 
 
