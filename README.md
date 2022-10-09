@@ -1,7 +1,7 @@
 # Peach - Finance Manager
 An Android finance management app with [Plaid](https://plaid.com) integration.
 
-# Demo
+---
 
 <img alt="Peach demo" src="https://github.com/OliverMadine/peach-finance-manager/blob/main/docs/demo.gif" width="30%" height="30%"/>
 
